@@ -1,24 +1,19 @@
 # Definindo as funções
 def somar(x, y):
     resultado = x + y
-    print('O resultado da operação é: ', resultado)
-    print('\n')
+    print('\n', x, ' + ', y, ' = ', resultado, '\n')
 
 def subtrair(x, y):
     resultado = x - y
-    print('O resultado da operação é: ', resultado)
-    print('\n')
+    print('\n', x, ' - ', y, ' = ', resultado, '\n')
 
 def multiplicar(x, y):
     resultado = x * y
-    print('O resultado da operação é: ', resultado)
-    print('\n')
+    print('\n', x, ' * ', y, ' = ', resultado, '\n')
 
 def dividir(x, y):
     resultado = x / y
-    print('O resultado da operação é: ', resultado)
-    print('\n')
-
+    print('\n', x, ' / ', y, ' = ', resultado, '\n')
 
 # Iniciando o programa
 print('Olá usuário, seja bem-vindo(a) a J-Calculator\n')
@@ -32,7 +27,7 @@ while True:
     print('4 - Dividir')
     print('5 - Sair do programa\n')
 
-    escolha = input('Digite o número da operação desejada: ')
+    escolha = input('Escolha o número da operação desejada: ')
 
     # Bloco de tratamento de erro para caso o usuário escolha uma opção divergente das suportadas
     try:
@@ -47,7 +42,7 @@ while True:
 
     # Loop interno para validar a entrada do primeiro número
     while True:
-        x = input('Digite o primeiro número: ')
+        x = input('\nPrimeiro valor: ')
         # Bloco de tratamento de erro para caso o usuário escolha uma opção divergente das suportadas
         try:
             x = float(x)
@@ -59,7 +54,7 @@ while True:
 
     # Loop interno para validar a entrada do segundo número
     while True:
-        y = input('Digite o segundo número: ')
+        y = input('Segundo valor: ')
         # Bloco de tratamento de erro para caso o usuário escolha uma opção divergente das suportadas
         try:
             y = float(y)
@@ -85,7 +80,7 @@ while True:
         dividir(x, y)
 
     else:
-        print('Operação inválida, favor selecionar uma opção correta \n')
+        print('Operação inválida, por favor, selecione uma opção correta \n')
 
 
 
